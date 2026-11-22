@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oss-maintenance-junit-summary"
+version = "0.1.0"
+description = "Summarize JUnit XML test reports as text or JSON."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "oss-maintenance-toolkit contributors" }]
+dependencies = []
+
+[project.scripts]
+junit-summary = "junit_summary.summary:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
